@@ -1,7 +1,5 @@
 const fs = require("fs");
 const { sortJSON } = require("./sort");
-const path = require("path");
-
 const PATTERN = {
   APP: "(?=(Сведения|Ошибка|Предупреждение))(.+?)(?=(Сведения|Ошибка|Предупреждение))",
   SECURITY: "(?=(Аудит успеха))(.+?)(?=(Аудит успеха))",
